@@ -1,0 +1,24 @@
+.title {
+    @apply
+    text-[var(--color-white)]
+    font-bold
+    mb-2;
+}
+
+h1.title {
+    @apply
+    w-4/5
+    leading-[3.8rem];
+
+    .caption {
+        @apply mt-4 text-lg tracking-wide;
+    }
+}
+
+.caption {
+    @apply
+    block
+    text-[var(--color-gray)]
+    uppercase
+    text-sm;
+}

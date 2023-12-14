@@ -1,0 +1,101 @@
+* {
+    font-family: 'Karla', sans-serif;
+}
+
+nav {
+    @apply
+    fixed
+    flex
+    justify-between
+    items-center
+    text-[var(--color-white)]
+    mx-auto
+    py-4
+    uppercase
+    px-8
+    max-w-[1512px]
+    w-full
+    z-10;
+
+    .logo {
+        @apply
+        flex
+        items-center
+        font-bold;
+
+        img {
+            @apply mr-5
+        }
+    }
+
+    ul {
+        @apply
+        items-center
+        flex
+        gap-16;
+
+        li {
+            @apply
+            flex
+            items-center;
+
+            a {
+                @apply
+                text-[var(--color-gray)]
+                duration-200
+                ease-linear;
+
+                &:hover {
+                    @apply text-[var(--color-white)];
+                }
+            }
+        }
+    }
+
+    .discordCta {
+        @apply
+        flex
+        items-center
+        font-bold
+        duration-200
+        ease-linear
+        will-change-transform;
+
+        svg {
+            @apply
+            ml-2
+            rotate-[220deg]
+            duration-200
+            ease-linear
+            will-change-transform;
+        }
+
+        &::after {
+            @apply
+            content-[""]
+            absolute
+            left-0
+            top-7
+            block
+            w-0
+            h-0.5
+            bg-[var(--color-blue)]
+            duration-1000
+            ease-in-out;
+        }
+
+        &:hover {
+            @apply
+            scale-105;
+
+            svg {
+                @apply
+                rotate-[270deg];
+            }
+
+            &::after {
+                @apply w-full;
+            }
+        }
+    }
+}

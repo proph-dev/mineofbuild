@@ -1,0 +1,35 @@
+.bannerHero {
+    @apply
+    h-screen;
+
+    .overlay {
+        @apply
+        absolute
+        bg-[var(--color-black)]
+        opacity-90
+        w-full
+        h-full
+        -z-10;
+    }
+
+    .bgImage {
+        @apply
+        absolute
+        -z-20
+        h-full
+        w-full
+        object-cover;
+    }
+
+    .text {
+        @apply
+        flex
+        justify-center
+        flex-col
+        w-1/2;
+    }
+
+    .image {
+        @apply w-1/2;
+    }
+}

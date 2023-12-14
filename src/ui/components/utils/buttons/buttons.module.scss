@@ -1,0 +1,36 @@
+.mainButton {
+    @apply
+    w-max
+    text-[var(--color-white)]
+    font-semibold
+    text-[14px]
+    bg-[var(--color-gray-red)]
+    px-[20px]
+    py-[10px]
+    rounded-[10px]
+    border-[3px]
+    border-transparent
+    duration-300
+    ease-in-out
+    hover:bg-[var(--color-light-pink)]
+    hover:shadow-lg;
+}
+
+.secondaryButton {
+    @apply
+    w-max
+    text-[var(--color-gray-red)]
+    font-semibold
+    text-[14px]
+    bg-transparent
+    px-[20px]
+    py-[10px]
+    rounded-[10px]
+    border-[3px]
+    border-[var(--color-gray-red)]
+    duration-300
+    ease-in-out
+    hover:bg-[var(--color-gray-red)]
+    hover:text-[var(--color-white)]
+    hover:shadow-lg;
+}

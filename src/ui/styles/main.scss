@@ -1,0 +1,68 @@
+/*** TailWindCSS configuration -> DON'T TOUCH ***/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/******************************/
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: var-(--color-black);
+}
+
+header {
+    @apply flex justify-center
+}
+
+section {
+    @apply relative h-full;
+}
+
+.container-page {
+    @apply px-8 max-w-[1512px] mx-auto h-full w-full;
+}
+
+/*** Colors ***/
+:root {
+    --color-black: #101014;
+    --color-white: #E6E6EB;
+    --color-gray: #b3b3b3;
+    --color-blue: #00b7ff
+}
+
+
+
+/*** Typos ***/
+
+/* H1 */
+h1 {
+    @apply
+    text-[var(--color-white)]
+    text-[48px]
+    leading-[calc(32px*1.2)];
+}
+
+/* H2 */
+h2 {
+    @apply
+    text-[var(--color-white)]
+    text-[24px]
+    leading-[calc(24px*1.2)];
+}
+
+/* H3 */
+h3 {
+    @apply
+    text-[var(--color-white)]
+    text-[20px]
+    leading-[calc(20px*1.2)];
+}
+
+/* Paragraph */
+p {
+    @apply text-[var(--color-white)];
+
+}
