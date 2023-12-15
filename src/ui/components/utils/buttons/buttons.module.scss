@@ -1,5 +1,6 @@
 .mainCta {
     @apply
+    relative
     flex
     items-center
     w-max
@@ -15,7 +16,13 @@
     mt-8
     duration-200
     ease-linear
-    will-change-transform;
+    will-change-transform
+    after:absolute
+    after:w-full
+    after:h-full
+    after:top-0
+    after:left-0
+    after:z-50;
     box-shadow: 0px 2px 0px 1px var(--color-dark-blue);
 
     svg {

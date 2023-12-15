@@ -14,10 +14,8 @@ import CarrerBlue from '../../../assets/img/carre-blue.png';
 import CarrerYellow from '../../../assets/img/carre-yellow.png';
 import TriangleBlue from '../../../assets/img/triangle-blue.png';
 import TriangleYellow from '../../../assets/img/triangle-yellow.png';
-import CroixBlue from '../../../assets/img/croix-blue.png';
 import CroixYellow from '../../../assets/img/croix-yellow.png';
 import CircleBlue from '../../../assets/img/circle-blue.png';
-import CircleYellow from '../../../assets/img/circle-yellow.png';
 
 
 function Home() {  

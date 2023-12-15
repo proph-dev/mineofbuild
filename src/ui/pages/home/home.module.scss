@@ -66,7 +66,8 @@
             absolute
             bottom-[26%]
             left-[16%]
-            cursor-default;
+            cursor-default
+            -z-10;
 
             img {
                 @apply w-[120px];
