@@ -1,36 +1,38 @@
-.mainButton {
+.mainCta {
     @apply
+    flex
+    items-center
     w-max
     text-[var(--color-white)]
-    font-semibold
-    text-[14px]
-    bg-[var(--color-gray-red)]
-    px-[20px]
-    py-[10px]
-    rounded-[10px]
-    border-[3px]
-    border-transparent
-    duration-300
-    ease-in-out
-    hover:bg-[var(--color-light-pink)]
-    hover:shadow-lg;
-}
+    bg-gradient-to-r
+    from-[var(--color-blue)]
+    to-[var(--color-dark-blue)]
+    px-8
+    py-4
+    rounded-full
+    uppercase
+    font-bold
+    mt-8
+    duration-200
+    ease-linear
+    will-change-transform;
+    box-shadow: 0px 2px 0px 1px var(--color-dark-blue);
 
-.secondaryButton {
-    @apply
-    w-max
-    text-[var(--color-gray-red)]
-    font-semibold
-    text-[14px]
-    bg-transparent
-    px-[20px]
-    py-[10px]
-    rounded-[10px]
-    border-[3px]
-    border-[var(--color-gray-red)]
-    duration-300
-    ease-in-out
-    hover:bg-[var(--color-gray-red)]
-    hover:text-[var(--color-white)]
-    hover:shadow-lg;
+    svg {
+        @apply
+        ml-2
+        rotate-[220deg]
+        duration-200
+        ease-linear
+        will-change-transform;
+    }
+
+    &:hover {
+        @apply scale-105;
+
+        svg {
+            @apply
+            rotate-[270deg];
+        }
+    }
 }

@@ -1,12 +1,23 @@
 .bannerHero {
     @apply
-    h-screen;
+    h-screen
+    overflow-hidden;
 
-    .overlay {
+    .overlay1 {
         @apply
         absolute
         bg-[var(--color-black)]
-        opacity-90
+        opacity-50
+        w-full
+        h-full
+        -z-30;
+    }
+
+    .overlay2 {
+        @apply
+        absolute
+        bg-[var(--color-black)]
+        opacity-80
         w-full
         h-full
         -z-10;
@@ -15,10 +26,32 @@
     .bgImage {
         @apply
         absolute
-        -z-20
+        -z-40
         h-full
         w-full
         object-cover;
+    }
+
+    .iconsGeometric {
+        img {
+            @apply -z-20 absolute;
+        }
+
+        .icon1 {
+            @apply top-[150px] left-[-65px] w-[150px] rotate-[65deg];
+        }
+
+        .icon2 {
+            @apply top-[450px] left-[120px] w-[80px] rotate-[30deg];
+        }
+
+        .icon3 {
+            @apply bottom-[150px] right-[-30px] w-[100px] rotate-[170deg];
+        }
+
+        .icon4 {
+            @apply top-[150px] right-[120px] w-[80px] rotate-[130deg];
+        }
     }
 
     .text {
@@ -27,9 +60,57 @@
         justify-center
         flex-col
         w-1/2;
+
+        .ctaArrow {
+            @apply
+            absolute
+            bottom-[26%]
+            left-[16%]
+            cursor-default;
+
+            img {
+                @apply w-[120px];
+            }
+
+            span {
+                font-family: 'Caveat', sans-serif;
+                @apply
+                absolute
+                top-1/2
+                left-[80%]
+                w-max
+                text-[var(--color-gray)]
+                text-2xl;
+            }
+        }
     }
 
     .image {
-        @apply w-1/2;
+        @apply
+        relative
+        w-1/2
+        flex
+        items-center;
+
+        .renderImg {
+            @apply
+            w-full;
+        }
+
+        .icon1 {
+            @apply -z-10 absolute top-[350px] left-[65px] w-[80px] rotate-[20deg];
+        }
+
+        .icon2 {
+            @apply -z-10 absolute bottom-[270px] left-[220px] w-[70px] rotate-[110deg];
+        }
+
+        .icon3 {
+            @apply -z-10 absolute bottom-[390px] right-[90px] w-[100px] rotate-[65deg];
+        }
+
+        .icon4 {
+            @apply -z-10 absolute top-[270px] right-[245px] w-[60px] rotate-[20deg];
+        }
     }
 }

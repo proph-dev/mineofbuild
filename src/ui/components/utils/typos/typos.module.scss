@@ -13,6 +13,15 @@ h1.title {
     .caption {
         @apply mt-4 text-lg tracking-wide;
     }
+
+    span:not(.caption) {
+        text-shadow: 0 0 5px var(--color-blue),
+        0 0 25px var(--color-blue),
+        0 0 50px var(--color-black),
+        0 0 60px var(--color-black),
+        0 0 80px var(--color-black),
+        0 0 100px var(--color-black);
+    }
 }
 
 .caption {
